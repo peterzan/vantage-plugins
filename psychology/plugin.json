@@ -1,0 +1,65 @@
+{
+  "name": "psychology",
+  "description": "Analyze cognitive biases, motivational gaps, adoption barriers, emotional landscapes, group dynamics, and narrative psychology. Reveals why humans actually behave the way they do — which is usually different from how they say they behave. Usable standalone or as a meta-layer on any other plugin's output.",
+  "version": "1.0.0",
+  "prefix": "psych",
+  "skills": [
+    {
+      "name": "psych_bias",
+      "file": "skills/bias.md",
+      "description": "Identify cognitive biases affecting a decision or analysis. Names specific biases, shows how they operate in context, and provides concrete debiasing strategies."
+    },
+    {
+      "name": "psych_motivation",
+      "file": "skills/motivation.md",
+      "description": "Analyze the gap between stated and revealed motivations. Identifies what people say they want vs. what their behavior shows they actually want."
+    },
+    {
+      "name": "psych_adoption",
+      "file": "skills/adoption.md",
+      "description": "Analyze why people will or won't adopt a product, technology, or change through behavioral psychology. Identifies barriers, accelerators, and predicted patterns."
+    },
+    {
+      "name": "psych_emotion",
+      "file": "skills/emotion.md",
+      "description": "Analyze the emotional landscape of a situation — what emotions are present, how they influence decisions, and what emotional needs are unmet."
+    },
+    {
+      "name": "psych_group",
+      "file": "skills/group.md",
+      "description": "Analyze group dynamics — groupthink, polarization, conformity, diffusion of responsibility. How teams and organizations make decisions differently than individuals."
+    },
+    {
+      "name": "psych_narrative",
+      "file": "skills/narrative.md",
+      "description": "Analyze the stories people tell themselves about a situation. Identifies dominant narratives, what they hide, and how to shift them."
+    }
+  ],
+  "commands": [
+    {
+      "name": "psych_bias_check",
+      "file": "commands/bias_check.md",
+      "description": "Quick Bias Check — 3 most dangerous biases with debiasing actions"
+    },
+    {
+      "name": "psych_motivation_check",
+      "file": "commands/motivation_check.md",
+      "description": "Quick Motivation Check — stated vs. revealed motivation gap"
+    },
+    {
+      "name": "psych_adoption_check",
+      "file": "commands/adoption_check.md",
+      "description": "Quick Adoption Check — biggest barrier, strongest lever, predicted pattern"
+    },
+    {
+      "name": "psych_emotion_check",
+      "file": "commands/emotion_check.md",
+      "description": "Quick Emotion Check — primary emotion, unmet need, intelligent response"
+    },
+    {
+      "name": "psych_narrative_check",
+      "file": "commands/narrative_check.md",
+      "description": "Quick Narrative Check — dominant story, what it hides, better alternative"
+    }
+  ]
+}

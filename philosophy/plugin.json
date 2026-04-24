@@ -1,0 +1,75 @@
+{
+  "name": "philosophy",
+  "description": "A meta-plugin that deconstructs any prompt through philosophical lenses. Surfaces hidden assumptions, examines ethical dimensions, challenges positions through dialectical analysis, strips thinking to first principles, generates alternative framings, and examines purpose alignment. Usable standalone or as a reflective layer on any other plugin's output.",
+  "version": "1.0.0",
+  "prefix": "phil",
+  "skills": [
+    {
+      "name": "phil_assumptions",
+      "file": "skills/assumptions.md",
+      "description": "Surface hidden assumptions in any statement, plan, analysis, or decision. Makes visible the premises being taken for granted — especially the ones nobody thinks to question."
+    },
+    {
+      "name": "phil_ethics",
+      "file": "skills/ethics.md",
+      "description": "Analyze ethical dimensions through multiple frameworks — consequentialist, deontological, virtue ethics, and justice. Identifies stakeholders, power asymmetries, and moral blind spots. Includes fiduciary awareness for regulated domains."
+    },
+    {
+      "name": "phil_dialectic",
+      "file": "skills/dialectic.md",
+      "description": "Thesis-antithesis-synthesis analysis. Constructs the strongest possible counter-argument to any position and explores what synthesis emerges from the tension."
+    },
+    {
+      "name": "phil_first_principles",
+      "file": "skills/first_principles.md",
+      "description": "Strip away all conventions, analogies, and inherited wisdom to examine what's actually known. Reconstruct from fundamentals alone and see what emerges."
+    },
+    {
+      "name": "phil_reframe",
+      "file": "skills/reframe.md",
+      "description": "Generate radically different framings of a problem or situation. Each reframing changes what counts as the problem, what counts as a solution, and what counts as success."
+    },
+    {
+      "name": "phil_purpose",
+      "file": "skills/purpose.md",
+      "description": "Examine whether stated purpose and actual function are aligned. Reveals the gap between what something claims to do and what it actually does."
+    },
+    {
+      "name": "phil_cui_bono",
+      "file": "skills/cui_bono.md",
+      "description": "Who benefits? Traces the actual flow of benefits from a recommendation across financial, reputational, legal, data, and operational dimensions to determine whether the stated beneficiary is the actual beneficiary."
+    },
+    {
+      "name": "phil_epistemology",
+      "file": "skills/epistemology.md",
+      "description": "Audit evidence quality behind claims. When output says 'research shows' or 'data indicates' — what research? How strong? Correlational or causal? Single study or meta-analysis? Audits the knowledge claims themselves."
+    }
+  ],
+  "commands": [
+    {
+      "name": "phil_assumptions_check",
+      "file": "commands/assumptions_check.md",
+      "description": "Quick Assumptions Check — 3-5 hidden assumptions with confidence ratings"
+    },
+    {
+      "name": "phil_reframe_quick",
+      "file": "commands/reframe_quick.md",
+      "description": "Quick Reframe — 3 alternative framings in 2-3 sentences each"
+    },
+    {
+      "name": "phil_ethics_check",
+      "file": "commands/ethics_check.md",
+      "description": "Quick Ethics Check — who benefits, who's harmed, what's the key moral question"
+    },
+    {
+      "name": "phil_steelman",
+      "file": "commands/steelman.md",
+      "description": "Steelman — the strongest possible counter-argument to any position"
+    },
+    {
+      "name": "phil_purpose_check",
+      "file": "commands/purpose_check.md",
+      "description": "Quick Purpose Check — is stated purpose aligned with actual function?"
+    }
+  ]
+}

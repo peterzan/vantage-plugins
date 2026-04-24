@@ -1,0 +1,75 @@
+{
+  "name": "rhetoric",
+  "description": "Analyze how language shapes perception — framing, persuasion mechanics, audience positioning, accountability language, narrative construction, and euphemism detection. Reveals how word choices create, obscure, or shift power, responsibility, and understanding. Usable standalone or as a meta-layer on any other plugin's output.",
+  "version": "1.0.0",
+  "prefix": "rhet",
+  "skills": [
+    {
+      "name": "rhet_framing",
+      "file": "skills/framing.md",
+      "description": "Analyze how language frames a situation — what's highlighted, what's hidden, what metaphors operate, and whose interests the framing serves."
+    },
+    {
+      "name": "rhet_persuasion",
+      "file": "skills/persuasion.md",
+      "description": "Audit persuasive techniques (ethos, pathos, logos) and assess whether persuasion is legitimate communication or manipulative exploitation."
+    },
+    {
+      "name": "rhet_audience",
+      "file": "skills/audience.md",
+      "description": "Analyze how language positions its audience — what assumptions it makes, what role it assigns, and whether the communication serves the reader or the writer."
+    },
+    {
+      "name": "rhet_accountability",
+      "file": "skills/accountability.md",
+      "description": "Audit how language assigns, defers, or obscures accountability. The critical fiduciary skill — catches 'the AI suggests' vs 'I recommend' and similar accountability shifts."
+    },
+    {
+      "name": "rhet_narrative",
+      "file": "skills/narrative.md",
+      "description": "Deconstruct embedded narratives — heroes, villains, conflicts, morals. Identifies what story is being told, what it excludes, and whose interests it serves."
+    },
+    {
+      "name": "rhet_euphemism",
+      "file": "skills/euphemism.md",
+      "description": "Detect and translate euphemistic, vague, or obscuring language into direct, plain language. Reveals what's being hidden and why."
+    },
+    {
+      "name": "rhet_loyalty",
+      "file": "skills/loyalty.md",
+      "description": "Analyze whether recommendation language is optimized for the user's outcome or for the provider's liability protection. Asks what the language is optimizing for — the person receiving the advice or the person giving it."
+    }
+  ],
+  "commands": [
+    {
+      "name": "rhet_frame_flip",
+      "file": "commands/frame_flip.md",
+      "description": "Quick Frame Flip — 3 alternative frames that reveal what the current frame hides"
+    },
+    {
+      "name": "rhet_accountability_scan",
+      "file": "commands/accountability_scan.md",
+      "description": "Quick Accountability Scan — who the language says is responsible vs who actually is"
+    },
+    {
+      "name": "rhet_spot_spin",
+      "file": "commands/spot_spin.md",
+      "description": "Quick Spot Spin — most significant bias or spin in the text"
+    },
+    {
+      "name": "rhet_plain_language",
+      "file": "commands/plain_language.md",
+      "description": "Quick Plain Language — translate euphemisms and jargon into direct language"
+    },
+    {
+      "name": "rhet_rephrase_accountable",
+      "file": "commands/rephrase_accountable.md",
+      "description": "Rephrase for Accountability — rewrite so responsibility is explicitly assigned"
+    },
+    {
+      "name": "rhet_loyalty_check",
+      "file": "commands/loyalty_check.md",
+      "description": "Quick Loyalty Audit — GREEN/YELLOW/RED flags across four dimensions: language loyalty, beneficiary analysis, evidence quality, stakeholder completeness"
+    }
+  ]
+}

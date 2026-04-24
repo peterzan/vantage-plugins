@@ -1,0 +1,70 @@
+{
+  "name": "history",
+  "description": "Find historical precedents, map trajectories, predict unintended consequences, identify historical echoes, learn from past failures, and assess timing. Usable standalone or as a meta-layer on any other plugin's output to add temporal depth and pattern recognition.",
+  "version": "1.0.0",
+  "prefix": "hist",
+  "skills": [
+    {
+      "name": "hist_precedent",
+      "file": "skills/precedent.md",
+      "description": "Find historical precedents for a current situation, decision, or technology. Identifies closest analogies and extracts actionable lessons."
+    },
+    {
+      "name": "hist_trajectory",
+      "file": "skills/trajectory.md",
+      "description": "Map the current situation onto known historical trajectories — adoption curves, hype cycles, industry evolution. Identifies where we are and what comes next."
+    },
+    {
+      "name": "hist_consequences",
+      "file": "skills/consequences.md",
+      "description": "Examine second and third-order consequences by studying what happened when similar decisions were made historically. Identifies unintended effects."
+    },
+    {
+      "name": "hist_rhyme",
+      "file": "skills/rhyme.md",
+      "description": "Identify how the current moment echoes past eras — structural similarities and critical differences. History doesn't repeat but it rhymes."
+    },
+    {
+      "name": "hist_failure",
+      "file": "skills/failure.md",
+      "description": "Study historical failures relevant to the current situation. Diagnoses root causes, warning signs, and lessons from what went wrong."
+    },
+    {
+      "name": "hist_timing",
+      "file": "skills/timing.md",
+      "description": "Analyze whether the timing is right for an initiative by examining historical precedents where timing was the decisive factor between success and failure."
+    }
+  ],
+  "commands": [
+    {
+      "name": "hist_precedent_check",
+      "file": "commands/precedent_check.md",
+      "description": "Quick Precedent Check — 3 most relevant historical parallels"
+    },
+    {
+      "name": "hist_trajectory_check",
+      "file": "commands/trajectory_check.md",
+      "description": "Quick Trajectory Check — where are we on the curve?"
+    },
+    {
+      "name": "hist_failure_check",
+      "file": "commands/failure_check.md",
+      "description": "Quick Failure Check — 3 similar historical failures and their warning signs"
+    },
+    {
+      "name": "hist_rhyme_check",
+      "file": "commands/rhyme_check.md",
+      "description": "Quick Historical Rhyme — what era does this echo?"
+    },
+    {
+      "name": "hist_timing_check",
+      "file": "commands/timing_check.md",
+      "description": "Quick Timing Check — is now the right time based on historical precedent?"
+    },
+    {
+      "name": "hist_lesson",
+      "file": "commands/lesson.md",
+      "description": "One Lesson from History — single most important historical insight"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "name": "sociology",
+  "description": "Analyze systemic effects — power structures, social stratification, institutional impact, community fabric, and network diffusion. Reveals how decisions affect groups, classes, and communities at scale. Usable standalone or as a meta-layer on any other plugin's output.",
+  "version": "1.0.0",
+  "prefix": "soc",
+  "skills": [
+    {
+      "name": "soc_power",
+      "file": "skills/power.md",
+      "description": "Analyze power dynamics — who gains power, who loses it, what institutions are strengthened or weakened. Makes invisible power visible."
+    },
+    {
+      "name": "soc_stratification",
+      "file": "skills/stratification.md",
+      "description": "Analyze effects on social stratification — does this widen or narrow gaps between groups economically, informationally, structurally, or socially?"
+    },
+    {
+      "name": "soc_institutional",
+      "file": "skills/institutional.md",
+      "description": "Analyze institutional impact — how professions, organizations, regulatory frameworks, and social norms are changed, challenged, or reinforced."
+    },
+    {
+      "name": "soc_community",
+      "file": "skills/community.md",
+      "description": "Analyze community effects — social ties, local identity, shared resources, collective action capacity, and social cohesion."
+    },
+    {
+      "name": "soc_diffusion",
+      "file": "skills/diffusion.md",
+      "description": "Analyze how ideas, products, and information spread through social networks. Identifies gatekeepers, diffusion barriers, and who gets left out."
+    },
+    {
+      "name": "soc_stakeholder_map",
+      "file": "skills/stakeholder_map.md",
+      "description": "Map ALL affected stakeholders including those excluded from consideration. Uses four-tier identification: primary (named), direct (unnamed but affected), ripple (indirect/second-order), and excluded (affected but absent from consideration)."
+    }
+  ],
+  "commands": [
+    {
+      "name": "soc_power_check",
+      "file": "commands/power_check.md",
+      "description": "Quick Power Check — who gains, who loses, who's not represented"
+    },
+    {
+      "name": "soc_equity_check",
+      "file": "commands/equity_check.md",
+      "description": "Quick Equity Check — widens or narrows inequality, key barrier"
+    },
+    {
+      "name": "soc_institution_check",
+      "file": "commands/institution_check.md",
+      "description": "Quick Institution Check — what's being strengthened, weakened, or transformed"
+    },
+    {
+      "name": "soc_community_check",
+      "file": "commands/community_check.md",
+      "description": "Quick Community Check — community cost and social capital effect"
+    },
+    {
+      "name": "soc_exclusion_check",
+      "file": "commands/exclusion_check.md",
+      "description": "Quick Exclusion Check — who is excluded and why"
+    }
+  ]
+}
