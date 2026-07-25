@@ -27,11 +27,11 @@ Those are the questions that determine whether a recommendation succeeds or fail
 
 | Plugin | Prefix | Tools | Asks |
 |--------|--------|-------|------|
-| **Philosophy** | `phil_` | 13 | *Should we?* — Surfaces assumptions, examines ethics, tests first principles, challenges purpose alignment, traces who benefits, audits evidence quality |
+| **Philosophy** | `phil_` | 13 | *Should we?* — Surfaces assumptions, examines ethics, tests first principles, challenges purpose alignment, traces who benefits, examines evidence quality |
 | **History** | `hist_` | 12 | *Has this worked before?* — Finds precedents, maps trajectories, learns from failures, assesses timing |
 | **Psychology** | `psych_` | 11 | *Will people actually do this?* — Identifies biases, motivation gaps, emotional barriers, adoption patterns |
 | **Sociology** | `soc_` | 11 | *How does this affect communities and power?* — Analyzes power structures, inequality, institutional change, community impact, maps all affected stakeholders |
-| **Rhetoric** | `rhet_` | 13 | *How is language shaping perception?* — Deconstructs framing, audits persuasion, detects euphemisms, maps accountability language, audits loyalty orientation |
+| **Rhetoric** | `rhet_` | 13 | *How is language shaping perception?* — Deconstructs framing, examines persuasion, detects euphemisms, maps accountability language, examines loyalty orientation |
 
 **60 tools total** — 33 skills for deep analysis, 27 commands for quick checks.
 
@@ -41,9 +41,9 @@ Each plugin works in two modes:
 
 **Standalone** — Ask a question directly. *"What are the hidden assumptions in this proposal?"* → `phil_assumptions` analyzes it.
 
-**Meta-layer** — Run another plugin's output through Vantage. A finance plugin recommends rebalancing a portfolio → `psych_emotion` reveals the client's resistance is shame-driven, not rational → `hist_precedent` shows that high-income professionals who ignored similar advice faced predictable consequences → `rhet_accountability` catches that the AI recommendation says "is suggested" instead of "I recommend," shifting accountability away from the advisor.
+**Meta-layer** — Run another plugin's output through Vantage. A finance plugin recommends rebalancing a portfolio → `psych_emotion asks whether the resistance is rational or emotional → hist_precedent surfaces cases where professionals in similar positions declined similar advice → `rhet_accountability` catches that the AI recommendation says "is suggested" instead of "I recommend," shifting accountability away from the advisor.
 
-The "how" plugins produce the recommendation. Vantage reveals whether it will actually work, who it affects, and what it's hiding.
+The "how" plugins produce the recommendation. Vantage surfaces what it assumes, whose interests it serves, and what it leaves unexamined.
 
 ## Fiduciary Awareness
 
@@ -59,21 +59,21 @@ The plugins don't override human judgment or make compliance decisions. They sur
 
 Fiduciary awareness was designed into the plugins from day one, informed by research on AI's fiduciary gap in financial services and the broader question of professional duty of care in an AI-mediated world.
 
-## Loyalty Audit
+## Loyalty Analysis
 
-Building on the fiduciary awareness foundation, Vantage includes a dedicated loyalty audit capability distributed across three plugins:
+Building on the fiduciary awareness foundation, Vantage includes a dedicated loyalty analysis capability distributed across three plugins:
 
 - **`rhet_loyalty`** (Rhetoric) — Analyzes whether recommendation language is optimized for the user's outcome or the provider's liability protection. Different from `rhet_accountability` (which catches responsibility shifts). `rhet_loyalty` asks what the language is optimizing for.
 
-- **`phil_cui_bono`** (Philosophy) — "Who benefits?" Traces the actual flow of benefits from a recommendation across financial, reputational, legal, data, and operational dimensions. Determines whether the stated beneficiary is the actual beneficiary.
+- **`phil_cui_bono`** (Philosophy) — "Who benefits?" Traces the actual flow of benefits from a recommendation across financial, reputational, legal, data, and operational dimensions. Surfaces where the stated beneficiary and the actual beneficiary diverge.
 
-- **`phil_epistemology`** (Philosophy) — Audits evidence quality behind claims. When output says "research shows" or "data indicates" — what research? How strong? Correlational or causal? Audits the knowledge claims themselves.
+- **`phil_epistemology`** (Philosophy) — Examines evidence quality behind claims When output says "research shows" or "data indicates" — what research? How strong? Correlational or causal? Examines the knowledge claims themselves.
 
 - **`soc_stakeholder_map`** (Sociology) — Maps all affected stakeholders including those excluded from consideration. Uses four-tier identification: primary, direct, ripple effect, and excluded.
 
-- **`/loyalty_check`** (Command) — Rapid audit across all four dimensions. Produces GREEN/YELLOW/RED flags for language loyalty, beneficiary analysis, evidence quality, and stakeholder completeness.
+- **`/loyalty_check`** (Command) — Rapid pass across all four dimensions. Produces GREEN/YELLOW/RED flags for language loyalty, beneficiary analysis, evidence quality, and stakeholder completeness.
 
-The loyalty audit was designed to detect what the language is optimizing for — the person receiving the advice or the person giving it. It complements the existing accountability tools by asking not just "who owns this recommendation?" but "whose interests does this recommendation actually serve?"
+The loyalty analysis was designed to surface what the language is optimizing for — the person receiving the advice or the person giving it. It complements the existing accountability tools by asking not just "who owns this recommendation?" but "whose interests does this recommendation actually serve?"
 
 ## Structure
 
@@ -169,7 +169,7 @@ vantage-plugins/
 
 **Commands** are quick interventions. They produce concise, focused output — a few sentences, a quick check, a fast reframe. Use when you need a rapid assessment.
 
-Every skill has a corresponding command for its most common use case.
+Most skills have a corresponding command for their most common use case.
 
 ## Using with MCP
 
@@ -191,7 +191,7 @@ The domain plugins handle the "how." Vantage adds the "why."
 
 | Domain Plugin Output | Vantage Layer | What It Reveals |
 |---------------------|---------------|-----------------|
-| Portfolio recommendation | `psych_emotion` | Client's resistance is shame, not ignorance |
+| Portfolio recommendation | `psych_emotion` | Whether the resistance is emotional rather than informational |
 | Contract review | `soc_power` | Which party the contract language empowers |
 | Product roadmap | `phil_assumptions` | Hidden assumptions about user behavior |
 | Marketing campaign | `rhet_framing` | What the messaging highlights and what it hides |
