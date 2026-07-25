@@ -41,7 +41,7 @@ Each plugin works in two modes:
 
 **Standalone** — Ask a question directly. *"What are the hidden assumptions in this proposal?"* → `phil_assumptions` analyzes it.
 
-**Meta-layer** — Run another plugin's output through Vantage. A finance plugin recommends rebalancing a portfolio → `psych_emotion asks whether the resistance is rational or emotional → hist_precedent surfaces cases where professionals in similar positions declined similar advice → `rhet_accountability` catches that the AI recommendation says "is suggested" instead of "I recommend," shifting accountability away from the advisor.
+**Meta-layer** — Run another plugin's output through Vantage. A finance plugin recommends rebalancing a portfolio → `psych_emotion` asks whether the resistance is rational or emotional → `hist_precedent` surfaces cases where professionals in similar positions declined similar advice → `rhet_accountability` catches that the AI recommendation says "is suggested" instead of "I recommend," shifting accountability away from the advisor.
 
 The "how" plugins produce the recommendation. Vantage surfaces what it assumes, whose interests it serves, and what it leaves unexamined.
 
@@ -67,7 +67,7 @@ Building on the fiduciary awareness foundation, Vantage includes a dedicated loy
 
 - **`phil_cui_bono`** (Philosophy) — "Who benefits?" Traces the actual flow of benefits from a recommendation across financial, reputational, legal, data, and operational dimensions. Surfaces where the stated beneficiary and the actual beneficiary diverge.
 
-- **`phil_epistemology`** (Philosophy) — Examines evidence quality behind claims When output says "research shows" or "data indicates" — what research? How strong? Correlational or causal? Examines the knowledge claims themselves.
+- **`phil_epistemology`** (Philosophy) — Examines evidence quality behind claims. When output says "research shows" or "data indicates" — what research? How strong? Correlational or causal? Examines the knowledge claims themselves.
 
 - **`soc_stakeholder_map`** (Sociology) — Maps all affected stakeholders including those excluded from consideration. Uses four-tier identification: primary, direct, ripple effect, and excluded.
 
