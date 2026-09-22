@@ -12,7 +12,7 @@
     {
       "name": "rhet_persuasion",
       "file": "skills/persuasion.md",
-      "description": "Audit persuasive techniques (ethos, pathos, logos) and assess whether persuasion is legitimate communication or manipulative exploitation."
+      "description": "Examine persuasive techniques (ethos, pathos, logos) and surface whether persuasion is legitimate communication or manipulative exploitation."
     },
     {
       "name": "rhet_audience",
@@ -22,7 +22,7 @@
     {
       "name": "rhet_accountability",
       "file": "skills/accountability.md",
-      "description": "Audit how language assigns, defers, or obscures accountability. The critical fiduciary skill — catches 'the AI suggests' vs 'I recommend' and similar accountability shifts."
+      "description": "Examine how language assigns, defers, or obscures accountability. The critical fiduciary skill — catches 'the AI suggests' vs 'I recommend' and similar accountability shifts."
     },
     {
       "name": "rhet_narrative",
@@ -69,7 +69,7 @@
     {
       "name": "rhet_loyalty_check",
       "file": "commands/loyalty_check.md",
-      "description": "Quick Loyalty Audit — GREEN/YELLOW/RED flags across four dimensions: language loyalty, beneficiary analysis, evidence quality, stakeholder completeness"
+      "description": "Quick Loyalty Check — GREEN/YELLOW/RED flags across four dimensions: language loyalty, beneficiary analysis, evidence quality, stakeholder completeness"
     }
   ]
 }

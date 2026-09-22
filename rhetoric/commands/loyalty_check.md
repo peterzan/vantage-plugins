@@ -3,10 +3,10 @@
 
 ---
 name: rhet_loyalty_check
-description: Quick loyalty audit across four dimensions — language loyalty, beneficiary analysis, evidence quality, and stakeholder completeness. Produces GREEN/YELLOW/RED flags for each dimension. Use for rapid assessment of any recommendation, proposal, or advice.
+description: Quick loyalty check across four dimensions — language loyalty, beneficiary analysis, evidence quality, and stakeholder completeness. Produces GREEN/YELLOW/RED flags for each dimension. Use for rapid assessment of any recommendation, proposal, or advice.
 ---
 
-Run a quick loyalty audit on this content across four dimensions. For each dimension, assess and assign a flag: GREEN (aligned with user), YELLOW (mixed/unclear), RED (misaligned — serves provider over user).
+Run a quick loyalty check on this content across four dimensions. For each dimension, assess and assign a flag: GREEN (aligned with user), YELLOW (mixed/unclear), RED (misaligned — serves provider over user).
 
 Input: {{input_text}}
 Focus: {{target_focus}}

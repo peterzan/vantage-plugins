@@ -42,7 +42,7 @@
     {
       "name": "phil_epistemology",
       "file": "skills/epistemology.md",
-      "description": "Audit evidence quality behind claims. When output says 'research shows' or 'data indicates' — what research? How strong? Correlational or causal? Single study or meta-analysis? Audits the knowledge claims themselves."
+      "description": "Examine evidence quality behind claims. When output says 'research shows' or 'data indicates' — what research? How strong? Correlational or causal? Single study or meta-analysis? Examines the knowledge claims themselves."
     }
   ],
   "commands": [
